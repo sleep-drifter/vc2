@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>VC2 Resources</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+	<!-- typekit script -->
+	<script type="text/javascript" src="//use.typekit.net/ykg5mog.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<style>
+		body,p,li {
+			font-family: "pt-sans",sans-serif;
+			color:#666;
+			font-size: 18px;
+			line-height: 26px;
+		}
+		p{
+
+		}
+		h1 {
+			font-family: "brandon-grotesque",sans-serif;
+			color:#003D66;
+
+		}
+		header h1{
+			color:#003D66;
+		}
+
+		article{
+			margin-top: 20px;
+			margin-bottom: 100px;
+		}
+
+
+
+		a{
+			color:#0066FF;
+			transition:0.3s all;
+		}
+		a:hover{
+			color:#003D66;
+		}
+
+		li,ul{
+			list-style: none;
+			text-indent: 0;
+			margin:0;
+			padding:0;
+		}
+		nav a{
+			text-decoration: none;
+		}
+		nav li{
+			margin-bottom: 5px;
+		}
+
+		#left-nav{
+			position: fixed;
+			top:0;
+			left:0;
+			padding:10px 40px;
+			padding-bottom: 30px;
+		}
+		#content{
+			margin-left: 240px;
+			padding-top: 70px;
+			max-width: 760px;
+		} 
+		.emphasis{
+			color:#003D66;
+			font-style: italic;
+		}
+		article li{
+			margin-bottom: 5px;
+		}
+		.contact{
+			margin-top: 20px;
+		}
+		.contact a{
+			color:#ccc;
+		}
+			.contact a:hover{
+				color:#666;
+			}
+	</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+
+<body id="top">
+	<div id="left-nav">
+		<header>
+			<h1>VC2</h1>
+		</header>
+		<nav>
+
+			<ul>
+				<li><a href="#top">Home</a></li>
+				<li><a href="#resources">Resources</a></li>
+				<li><a href="#tutorials">Tutorials</a></li>
+				<li><a href="#demos">Demos</a></li>
+				<li class="contact"><a href="#demos">Contact</a></li>
+
+			</ul>	
+
+		</nav>
+	</div>
+
+	<div id="content">
+
+	<article>
+			<h1>Welcome!</h1>
+			<p>This webpage is here to help you solve problems in your web projects! This webpage is divided into three sections: resources, tutorials, and demos. The resources section includes helpful sites with a lot of relevant material pertaining to web design. The tutorial section includes links to helpful tutorials that relate to concepts that you've been learning in class. Finally, the demo section contains links to modules that have been made to demostrate web design concepts. In these interactive demos, I encourage you to deconstruct and rearrange the code. Experimentation will help you learn how HTML &amp; CSS elements interact with one another. </p>
+
+			<p>I'm available for tutoring on Sunday (in xarts lab) between 1pm-3pm. Please email or message me on Facebook if you'd like help outside of class. Best of luck on your final projects!</p>
+			<p>-Matt</p>
+			
+		</article>
+
+		<article id="resources">
+			<h1>Resources</h1>
+			<p>This section contains helpful online resources. Some of these sites are great for answering questions and some are less informative and more inspirational. Google is your best friend in web development. Not sure why your text won't align correctly? Try google and look for credible sites such as <span class="emphasis">CSS Tricks, Stack Overflow, CodePen, or Codrops.</span>
+			</p>
+			<ul>
+				<li><a href="#">Links coming soon!</a></li>
+
+
+			</ul>
+		</article>
+
+		<article id="tutorials">
+			<h1>Tutorials</h1>
+			<p>This is a list of tutorials that relate to concepts covered in Visual Communication 2.</span>
+			</p>
+			<ul>
+				<li><a href="#">Links coming soon!</a></li>
+
+
+			</ul>
+		</article>
+
+		<article id="demos">
+			<h1>Demos</h1>
+			<p>Look through these demostrations and experiment with the code. See what happens if you change the HTML and CSS. The demos relfect topics that are discussed in class.
+			</p>
+			<ul>
+				<li><a href="#">Links coming soon!</a></li>
+
+
+			</ul>
+		</article>
+
+			<article id="contact">
+			<h1>Contact</h1>
+			<p>Need help outside of Class? Email me (<a href="mailto:mattwujek.com">mattwujek@gmail.com</a>) or <a href="https://www.facebook.com/matt.wujek.3">message me on Facebook</a>!
+			</p>
+		
+		</article>
+	</div>
+
+
+
+
+
+	<!-- Smooth scrolling on links -->
+	<!-- Scroll to Top -->
+	<script type="text/javascript">
+
+
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+				|| location.hostname == this.hostname) {
+
+				var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 500);
+				return false;
+			}
+		}
+	});
+
+	</script>
+</body>
+</html>
